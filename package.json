@@ -1,0 +1,11 @@
+{
+  "name": "jw-safari-extension",
+  "private": true,
+  "type": "module",
+  "description": "Verificarea automată și testele extensiei JW Safari",
+  "scripts": {
+    "verifica": "eslint JW_Safari_Extension.user.js && node --check JW_Safari_Extension.user.js",
+    "teste": "python3 tests/test_extensie.py JW_Safari_Extension.user.js"
+  },
+  "devDependencies": { "eslint": "9.17.0", "globals": "15.14.0" }
+}
